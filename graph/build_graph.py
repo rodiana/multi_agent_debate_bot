@@ -29,7 +29,6 @@ def build_debate_graph() -> StateGraph:
         source="CheckIfDone",
         path=lambda state: state.routing_decision,
         path_map={
-            # "continue": lambda x: f"{AGENT_SEQUENCE[0]}_Turn",
             "continue": f"{AGENT_SEQUENCE[0]}_Turn",
             "closing": "GenerateClosings",
         }
@@ -62,6 +61,10 @@ def build_debate_graph() -> StateGraph:
     print("\n[GRAPH] Transitions:")
     rprint(graph.get_graph().edges)
 
+    png_graph = graph.get_graph().draw_mermaid_png()
+    with open("my_graph.png", "wb") as f:
+        f.write(png_graph)
+    f.close()
+    print("Graph saved as 'my_graph.png!")
 
-
-    return graph# builder.compile()
+    return graph

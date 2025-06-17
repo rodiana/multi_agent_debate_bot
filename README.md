@@ -12,6 +12,7 @@ This project explores how agentic reasoning and conditional graph routing can be
 - **Conditional Routing** – control flow determines whether to continue debating or wrap up
 - **State Tracking** – maintains history, round count, and final winner using a shared state object
 - **Prompt Management** – all agent prompts are stored and versioned via [LangSmith](https://smith.langchain.com/) for better maintainability
+- **Graph Introspection** – used `get_graph()` to inspect the structure at runtime and export a visual representation (PNG) using `graph.get_graph().draw_mermaid_png()`, making it easier to debug or analyze control flow
 
 ---
 
