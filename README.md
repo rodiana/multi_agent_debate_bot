@@ -37,9 +37,9 @@ Each agent (Optimist, Skeptic, Analyst, Moderator) loads its prompt from the Lan
 Make sure you also have your **LangSmith API key** set as an environment variable:
 
 ### Run via CLI
-
 ```bash
 python main.py
+```
 
 ## 📂 Project Structure
 graph/
