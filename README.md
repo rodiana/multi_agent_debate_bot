@@ -42,6 +42,7 @@ python main.py
 ```
 
 ## 📂 Project Structure
+```bash
 graph/
   ├─ build_graph.py       # Builds and compiles the LangGraph
   ├─ nodes.py             # All agent nodes + control logic
@@ -52,7 +53,7 @@ agents/
   ├─ analyst.py
   ├─ moderator.py
 main.py                   # CLI runner
-
+```
 
 ## 📝 Note
 This codebase includes multiple print() statements intentionally left in place for debugging and educational purposes. They’re meant to assist others building similar LangGraph-based architectures by making execution flow and state transitions more transparent.
