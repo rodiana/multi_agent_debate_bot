@@ -1,0 +1,5 @@
+langchain
+langgraph
+langsmith
+langchain-ollama
+python-dotenv
